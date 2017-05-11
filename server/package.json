@@ -9,7 +9,18 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinvasir/building-projects-with-js-fork.git"
-  },  
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015-node": "^6.1.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node",
+      "stage-0"
+    ]
+  }
 }
