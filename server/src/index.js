@@ -1,19 +1,5 @@
-// npm packages
-import express from 'express';
-
-// init app
-const app = express();
-
-// test method
-app.get('/', (req, res) => {
-	res.send('Hello world!');
-})
-
-// catch all unhandled errors
-app.use((err, req, res) => {
-	console.error(err.stack);
-	res.status(500).send(err);
-});
+// out packages
+import app from './app';
 
 app.listen(8080, function() {
 	const host = this.address().address;
