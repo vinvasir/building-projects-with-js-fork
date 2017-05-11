@@ -4,6 +4,10 @@ import express from 'express';
 // init app
 const app = express();
 
+// add body parsing
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({extended: true})); // for parsing applicatoin/x-www-form-urlencoded
+
 // test method
 app.get('/', (req, res) => {
 	res.send('Hello world!');
