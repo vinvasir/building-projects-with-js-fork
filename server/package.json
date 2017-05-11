@@ -4,7 +4,7 @@
   "description": "Like building products with js, but with some changes",
   "main": "index.js",
   "scripts": {
-    "test": "eslint src/"
+    "test": "eslint src/ && babel-node test/"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
-    "eslint-plugin-react": "^7.0.0"
+    "eslint-plugin-react": "^7.0.0",
+    "supertest": "^3.0.0",
+    "tape": "^4.6.3"
   },
   "babel": {
     "presets": [
