@@ -1,0 +1,15 @@
+{
+  "name": "experts",
+  "version": "1.0.0",
+  "description": "Like building products with js, but with some changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinvasir/building-projects-with-js-fork.git"
+  },  
+  "author": "",
+  "license": "ISC"
+}
