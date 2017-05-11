@@ -18,8 +18,19 @@ app.use(bodyParser.urlencoded({extended: true})); // for parsing applicatoin/x-w
 
 // test method
 app.get('/', (req, res) => {
-	res.send('Hello world!');
-})
+	res.send('Hello World!');
+});
+
+app.post('/login', (req, res) => {
+	const {username, password} = req.body;
+
+	if (username === 'test' && password === '123') {
+		res.send({username, id: 1});
+		return;
+	}
+
+	res.status(401).send({error: 'Incorrect username or password'});
+});
 
 // catch all unhandled errors
 app.use((err, req, res) => {
