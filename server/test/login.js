@@ -27,6 +27,8 @@ export default (test) => {
 
 				t.deepEqual(actualBody.user, decodedUser, 'User must match token');
 
+				app.set('token', actualBody.token);
+
 				t.end();
 			});
 	});
